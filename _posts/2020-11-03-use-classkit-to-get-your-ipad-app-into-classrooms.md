@@ -1,4 +1,4 @@
-*[This post originally appeared on Medium](https://medium.com/livefront/how-to-get-featured-on-the-app-store-by-making-apple-look-good-6a200b5d1ec7)*.
+*[This post originally appeared on Medium](https://regularberry.medium.com/use-classkit-to-get-your-ipad-app-into-classrooms-554faf137b70)*.
 
 There’s an unprecedented demand for digital education right now, and Apple has put millions of iPads into classrooms.
 
