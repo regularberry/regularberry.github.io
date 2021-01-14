@@ -2,7 +2,7 @@
 
 I’ve noticed a loading screen design pattern where a placeholder gets swept up to the title position.
 
-![Sonos loading screen](/assets/2017-08-21/sonos.gif)
+![Sonos loading screen](/assets/images/animating-font-size/sonos.gif)
 
 Let’s say you want to do that with a UILabel. We access a label’s font size through its font, but Apple hasn’t made the label.font [implicitly animatable](https://developer.apple.com/library/content/documentation/General/Conceptual/Devpedia-CocoaApp/Animation.html) so we can’t simply go like this:
 
@@ -21,7 +21,7 @@ UIView.animate(withDuration: 1.0) {
 }
 {% endhighlight %}
 
-![Pixellated result](/assets/2017-08-21/pixellated.gif)
+![Pixellated result](/assets/images/animating-font-size/pixellated.gif)
 
 Yikes. That looks pixellated when blown up because the small font rendering doesn’t contain enough detailed information to look good at a higher resolution.
 
@@ -47,7 +47,7 @@ UIView.animate(withDuration: 1.0) {
 }
 {% endhighlight %}
 
-![Enlarge an existing ‘bigger’ font](/assets/2017-08-21/enlarge.gif)
+![Enlarge an existing ‘bigger’ font](/assets/images/animating-font-size/enlarge.gif)
 
 This way we get the benefit of a more detailed render.
 
@@ -76,7 +76,7 @@ UIView.animate(withDuration: 1.0, animations: {
 })
 {% endhighlight %}
 
-![Shrinking and swapping](/assets/2017-08-21/shrink.gif)
+![Shrinking and swapping](/assets/images/animating-font-size/shrink.gif)
 
 Not bad… but see the slight jitter at the end?
 
@@ -88,6 +88,6 @@ Now, this isn’t that big of a deal. You could use the above animation and call
 
 If you want extra credit though, throw in a cross-fade between the two labels. To see the code for this check out my GitHub project: [https://github.com/regularberry/AnimatedFontSize](https://github.com/regularberry/AnimatedFontSize)
 
-![Cross fading UIFont animation](/assets/2017-08-21/crossfade.gif)
+![Cross fading UIFont animation](/assets/images/animating-font-size/crossfade.gif)
 
 *Sean works as an iOS developer at [Livefront](http://www.livefront.com) and has animated many fonts in his [algebra app](http://www.regularberry.com).*
